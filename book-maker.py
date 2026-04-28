@@ -13,6 +13,8 @@ def four_pager(input_pdf, output_pdf):
     
     reader = PdfReader(input_pdf)
     writer = PdfWriter()
+    
+    # i would like to add support for 2x2 and 8x8 printing as well. i feel pretty awesome about myself cause gemini couldn't figure out the page logic. but i guess probably claude could have. whatever...
 
     # the number of pages in the in the input pdf
     input_pages = reader.get_num_pages()
@@ -103,6 +105,6 @@ def four_pager(input_pdf, output_pdf):
         
     return 0
 
-four_pager(pdf_name, f"{name}-4_page_booklet.pdf")
+four_pager(pdf_name, f"{name}-4x4_booklet.pdf")
 
-print(f"\n{name}-4_page_booklet.pdf is your new document—follow instructions on the first page to assemble it\n")
+print(f"\n{name}-4x4_booklet.pdf is your new document. to bind, cut it hamburger style, put the bottom half on top of the top half, staple along the middle, and fold. if the document is too long, \n")
