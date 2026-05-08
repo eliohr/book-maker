@@ -5,7 +5,7 @@ import logging
 # I was getting clutter in the output from pypdf having its own issues with pdf data
 logging.disable(logging.WARNING)
 
-name = input("\nmove this file and the pdf you'd like to convert into the same folder and then navigate to that directory and then run this file and then enter the name of the pdf you'd like to convert (without file extension): ")
+name = input("\nmove this file and the pdf you'd like to convert into the same folder and then navigate to that directory and then run this file and then enter the name of the pdf you'd like to convert (without .pdf extension): ")
     
 pdf_name = name + ".pdf"
 
